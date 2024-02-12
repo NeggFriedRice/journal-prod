@@ -1,0 +1,13 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+h1 {
+  font-size: 2rem;
+}
+
+* {
+  margin: 0 6px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
