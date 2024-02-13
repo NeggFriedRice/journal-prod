@@ -12,12 +12,12 @@ const App = () => {
   const [entries, setEntries] = useState([{category: 0, content: "Pizza is great"}])
 
   useEffect(() => {
-    fetch('http://localhost:4001/categories')
+    fetch('https://journal-api-prod-qrnq.onrender.com/categories')
       .then((response) => response.json())
       // .then(data => console.log(data))
       .then(data => setCategories(data))
 
-      fetch('http://localhost:4001/entries')
+      fetch('https://journal-api-prod-qrnq.onrender.com/entries')
       .then((response) => response.json())
       // .then(data => console.log(data))
       .then(data => setEntries(data))
@@ -33,7 +33,7 @@ const App = () => {
     }
 
     // 1.5. POST new entry to API
-    const res = await fetch('http://localhost:4001/entries', {
+    const res = await fetch('https://journal-api-prod-qrnq.onrender.com/entries', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
